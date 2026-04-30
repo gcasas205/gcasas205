@@ -64,6 +64,12 @@ Trabajo integrador de Base de Datos Aplicada: diseño de esquema relacional comp
 
 ---
 
+### [mu-level-monitor](https://github.com/gcasas205/mu-level-monitor)
+App de escritorio Windows que monitorea en tiempo real el nivel de un personaje de MU Online leyendo el título de la ventana del proceso. Corre 3 threads en paralelo: lectura de estado, cálculo de velocidad de subida y sistema de alertas vía Discord webhooks. Incluye GUI con tkinter, sistema de perfiles persistentes en JSON y empaquetado como `.exe` con PyInstaller.  
+`Python` `Threading` `tkinter` `Win32 API` `Discord Webhooks` `PyInstaller`
+ 
+---
+
 ### [task-manager-api](https://github.com/gcasas205/task-manager-api) *(en construcción)*
 API RESTful con autenticación JWT, CRUD, validación con Pydantic y MySQL. Dockerizada con docker-compose.  
 `Python` `FastAPI` `MySQL` `Docker` `JWT` `SQLAlchemy`
