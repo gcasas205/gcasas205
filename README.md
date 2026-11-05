@@ -1,6 +1,6 @@
 # Hola, soy Gonzalo 👋
 
-**Backend Developer · Data Engineer · Python | FastAPI | AWS | Docker | SQL**  
+**Backend Developer · Data Engineer · Python | FastAPI | AWS DMS | Apache Iceberg | Amazon Bedrock**  
 Construyo APIs y pipelines de datos que operan en producción — actualmente en 8 países simultáneos.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-gonzalo--casas-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gonzalo-casas-b35290238/)
@@ -10,14 +10,16 @@ Construyo APIs y pipelines de datos que operan en producción — actualmente en
 
 ## Sobre mí
 
-Soy Backend Developer y Data Engineer con más de 2 años de experiencia construyendo sistemas que resuelven problemas reales.
-Me especializo en Python, FastAPI y AWS, con perfil híbrido entre backend y datos: disfruto tanto del desarrollo de APIs como del trabajo con pipelines ETL a escala internacional.
+Soy Backend Developer y Data Engineer con 4+ años de experiencia construyendo sistemas que resuelven problemas reales.
+Me especializo en Python, FastAPI y AWS, trabajando tanto en el backend puro como en pipelines de datos a escala.
 
-Actualmente en SwissJust America SA., donde mantengo y evoluciono el Data Warehouse corporativo que unifica operaciones de 8 países, optimizo procesos ETL en producción (reduje un proceso de carga diaria de 3 horas a 10 minutos) y desarrollo APIs con FastAPI sobre una arquitectura de microservicios.
-Antes de eso, 2 años como consultor técnico en Oracle EPM para clientes como Telecom Argentina y Arcos Dorados.
+Actualmente en SwissJust America SA., donde:
+- Desarrollo APIs con FastAPI que integran operaciones de **8 países** sobre MySQL RDS/Aurora
+- Diseñé e implementé un **datalake multi-país** con arquitectura medallion (CDC + Apache Iceberg + PySpark), con un **agente de IA en Amazon Bedrock** para consultas en lenguaje natural
 
-Estudiante de Ingeniería en Informática en la UNLaM. Me interesa el código que escala,
-los equipos que aprenden juntos y los proyectos donde se nota el impacto de lo que construís.
+Antes, 2.5 años como consultor técnico en Oracle EPM para **Telecom Argentina** y **Arcos Dorados** (franquicia más grande de McDonald's en América Latina).
+
+Estudiante de Ingeniería en Informática en la UNLaM.
 
 ---
 
@@ -25,11 +27,12 @@ los equipos que aprenden juntos y los proyectos donde se nota el impacto de lo q
 
 | Área | Tecnologías |
 |---|---|
-| **Backend** | Python 3 · FastAPI · SQLAlchemy · REST APIs · Pydantic |
+| **Backend** | Python 3.11-3.12 · FastAPI · SQLAlchemy · Pydantic v2 · REST APIs · JWT |
+| **Data Engineering** | Apache Iceberg · PySpark · AWS Glue · AWS DMS · CDC · Arquitectura Medallion |
+| **IA Generativa** | Amazon Bedrock Agents · Nova Pro · Text-to-SQL · Amazon Athena · Lambda |
 | **Bases de datos** | MySQL · AWS RDS · Aurora · Redis · SQL avanzado |
-| **Cloud & Data** | AWS S3 · Glue · Athena · Lambda · Parameter Store · QuickSight · ETL / Big Data |
-| **Orquestación** | Apache Airflow · AWS Glue Jobs · Pipelines ETL automatizados |
-| **DevOps** | Docker · Kubernetes · GitLab · GitHub Actions · Pipenv · Postman |
+| **Cloud AWS** | S3 · DMS · Glue · Athena · Bedrock · QuickSight · Lambda · SNS · CloudWatch |
+| **DevOps** | Docker · GitLab CI/CD · GitHub Actions · pytest · Ruff |
 | **BI & Reporting** | Oracle Hyperion · PBCS Cloud · FDMEE · Essbase · DRM |
 | **Idiomas** | Español (nativo) · Inglés (intermedio) |
 
@@ -37,16 +40,14 @@ los equipos que aprenden juntos y los proyectos donde se nota el impacto de lo q
 
 ## Experiencia laboral
 
-**SwissJust America SA.** — Backend Developer & Data Engineer *(Abr 2025 – actualidad)*  
-Mantengo y evoluciono el Data Warehouse corporativo que unifica datos de 8 países. Optimicé un proceso ETL crítico de carga diaria de 3 horas a 10 minutos refactorizando jobs en AWS Glue. Desarrollo APIs RESTful con FastAPI, orquesto flujos con Airflow y gestiono infraestructura con Docker, Kubernetes y AWS Parameter Store.  
-Stack: Python · FastAPI · MySQL · AWS RDS · Aurora · Redis · AWS Glue · Airflow · Lambda · Parameter Store · Docker · Kubernetes
+**SwissJust America SA.** — Backend Developer *(Abr 2025 – actualidad)*  
+APIs RESTful con FastAPI para 8 países. Stack: Python, MySQL, AWS RDS/Aurora, Redis, Docker.
 
-**SwissJust America SA.** — Analista de Datos / Data Engineer *(Jul 2023 – Abr 2025)*  
-Diseñé el Data Warehouse multi-país desde cero, automaticé pipelines ETL diarios con AWS Glue y construí dashboards en QuickSight para 50+ usuarios de negocio en América Latina.  
-Stack: Python · Pandas · SQL · AWS S3 · Glue · Athena · QuickSight · MySQL · Aurora
+**SwissJust America SA.** — Data Engineer / Analista de Datos *(Jul 2023 – actualidad)*  
+Datalake multi-país con AWS DMS, Apache Iceberg, PySpark y agente de IA con Amazon Bedrock. Data Warehouse, ETL con AWS Glue y 10+ dashboards en QuickSight para 50+ usuarios de negocio.
 
 **Apply BI SRL** — Consultor Técnico *(Ene 2021 – Jul 2023)*  
-Desarrollos en Oracle Hyperion Planning, Essbase y PBCS Cloud para Telecom Argentina y Arcos Dorados. Ascendido de Junior a Consultor Técnico en 3 meses.
+Oracle Hyperion Planning, Essbase y PBCS Cloud para Telecom Argentina y Arcos Dorados.
 
 ---
 
@@ -59,15 +60,9 @@ API RESTful para gestionar partidos de fútbol amateur, implementada con Arquite
 ---
 
 ### [TP-SQL](https://github.com/gcasas205/TP-SQL)
-Trabajo integrador de Base de Datos Aplicada: diseño de esquema relacional completo con DER, scripts de creación, carga inicial automatizada y configuración de motor de base de datos. 43 commits de desarrollo progresivo.  
+Sistema de gestión de ventas (AuroraSA) en SQL Server: 3 schemas, stored procedures genéricos con SQL dinámico, encriptación VARBINARY para datos sensibles, carga desde API externa vía PowerShell y reportes XML. 43 commits de desarrollo progresivo.  
 `SQL` `T-SQL` `Diseño relacional` `DER` `Scripting`
 
----
-
-### [mu-level-monitor](https://github.com/gcasas205/mu-level-monitor)
-App de escritorio Windows que monitorea en tiempo real el nivel de un personaje de MU Online leyendo el título de la ventana del proceso. Corre 3 threads en paralelo: lectura de estado, cálculo de velocidad de subida y sistema de alertas vía Discord webhooks. Incluye GUI con tkinter, sistema de perfiles persistentes en JSON y empaquetado como `.exe` con PyInstaller.  
-`Python` `Threading` `tkinter` `Win32 API` `Discord Webhooks` `PyInstaller`
- 
 ---
 
 ### [task-manager-api](https://github.com/gcasas205/task-manager-api) *(en construcción)*
